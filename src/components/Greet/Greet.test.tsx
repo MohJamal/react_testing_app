@@ -32,3 +32,17 @@ test("Greet renders with a name", () => {
   const textElement = screen.getByText("Hello Mohammed");
   expect(textElement).toBeInTheDocument();
 });
+
+// test.only("Greet renders with a name", () => {
+//   render(<Greet name="Mohammed" />);
+
+//   const textElement = screen.getByText("Hello Mohammed");
+//   expect(textElement).toBeInTheDocument();
+// });
+
+// test.skip("Greet renders with a name", () => {
+//   render(<Greet name="Mohammed" />);
+
+//   const textElement = screen.getByText("Hello Mohammed");
+//   expect(textElement).toBeInTheDocument();
+// });
