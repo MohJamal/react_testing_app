@@ -104,6 +104,31 @@ import Greet from "./Greet";
 
 /************** */
 
+// describe("Greet", () => {
+//   it("renders correctly", () => {
+//     render(<Greet />);
+
+//     const textElement = screen.getByText("Hello");
+//     expect(textElement).toBeInTheDocument();
+//   });
+
+//   fit("renders correctly", () => {
+//     render(<Greet />);
+
+//     const textElement = screen.getByText("Hello");
+//     expect(textElement).toBeInTheDocument();
+//   });
+
+//   xit("renders correctly", () => {
+//     render(<Greet />);
+
+//     const textElement = screen.getByText("Hello");
+//     expect(textElement).toBeInTheDocument();
+//   });
+// });
+
+/***************************/
+
 describe("Greet", () => {
   test("renders correctly", () => {
     render(<Greet />);
