@@ -52,8 +52,22 @@ describe("Application", () => {
     expect(nameElement3).toBeInTheDocument();
 
     /** getByText */
+    // full string match
+    // const paragraphElement = screen.getByText('All fields are mandatory')
 
-    const paragraphElement = screen.getByText("All fields are mandatory");
+    //substring match - string
+    // const paragraphElement = screen.getByText("are mandatory", {
+    //   exact: false,
+    // });
+
+    //substring match - regex
+    // const paragraphElement = screen.getByText(/mandatory/i);
+
+    //substring match - custom function
+    const paragraphElement = screen.getByText((content) =>
+      content.startsWith("All")
+    );
+
     expect(paragraphElement).toBeInTheDocument();
 
     /** getByDisplayValue */
