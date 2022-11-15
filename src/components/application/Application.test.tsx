@@ -1,6 +1,9 @@
 import { render, screen } from "@testing-library/react";
 import { Application } from "./Application";
 
+// console.log(name);
+// const name = "Mohammed";
+
 describe("Application", () => {
   test("renders correctly", () => {
     render(<Application />);
@@ -35,6 +38,8 @@ describe("Application", () => {
 
     const submitButtonElement = screen.getByRole("button");
     expect(submitButtonElement).toBeInTheDocument();
+    // expect(submitButtonElement).not.toBeEnabled();
+    expect(submitButtonElement).toBeDisabled();
 
     /** getByLabelText */
 
